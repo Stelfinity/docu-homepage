@@ -25,8 +25,8 @@ function cropAccountName(a) {
 
 function openWalletPopup() {
   if(getAccount() == null) {
-    // nice popup -> call setConnectedWallet to connect
-    setConnectedWallet("k:b78e8b0cb99105bba985403ec86f42001df6069fc7933d520b1f2407d0a09aca", false);
+    // nice popup -> call setConnectedWallet to connect: here in backend
+    setConnectedWallet("k:youaccount", false);
     getUserNFTs();
     document.getElementById('openWalletPopupButton').innerText = cropAccountName(account);
   } else {
